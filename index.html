@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>satcss</title>
+    <style>
+
+        /* universal selector */
+        *{
+            color:navy; 
+        }
+
+        /* class selector */
+        .class{
+            color:aqua;
+        }
+
+        /* id selector */
+        #id{
+            color: blueviolet;
+        }
+
+        /* elememt selector */
+        h1{
+
+            color:red;
+
+        }
+
+        /* pseudo class */
+        button:hover{
+            background-color: black;
+            color:gold;
+        }
+        button:active{
+            background-color: brown;
+            color:aquamarine;
+        }
+
+
+        /*pseudo element */
+        h1::first-letter{
+            color:blueviolet;
+        }
+
+
+        /* cascading */
+         #id1 p{
+            background-color: blue;
+        }
+        #id1 p{
+            background-color:pink;
+        }
+        #id1 p{
+            background-color:yellow;
+        } 
+        
+        /* important  */
+        #id2{
+            background-color: peru;
+        }
+
+        .class1{
+            background-color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="id1" >
+       <h1>Universal Selector</h1> 
+       <p class="class1" id="id2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, dolorem.</p>
+       <button>Hello</button>
+    </section>
+    <section>
+        <h1>Element Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dignissimos.</p>
+    </section>
+    <section>
+        <h1>Class Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, atque?</p>
+    </section>
+    <section>
+        <h1>ID Selector</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, labore!</p>
+    </section>
+    <section>
+        <h1 class="class" id="id" style="color:teal;">Selector Specificity</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolore.</p>
+    </section>
+    <section>
+        <h1>Inline Specificity</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, rerum!</p>
+    </section>
+</body>
+</html>
